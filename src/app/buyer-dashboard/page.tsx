@@ -1,11 +1,7 @@
 'use client';
 import ChatWidget from '@/components/ChatWidget';
-import { useSearchParams } from 'next/navigation';
 
 export default function BuyerDashboard() {
-  const searchParams = useSearchParams();
-  const role = searchParams.get('role') || 'buyer';
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="max-w-6xl mx-auto px-4 py-12">
